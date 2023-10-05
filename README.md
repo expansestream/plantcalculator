@@ -16,8 +16,6 @@ Calculates plant totals in table form.
                 font-size: 10pt;
             text-align: left;
             background-color: lemonchiffon;
-            margin-left: auto;
-            margin-right: auto;
     }
       td {font-family: Arial, Helvetica, sans-serif;
                 font-size: 10pt;
@@ -188,11 +186,11 @@ function counter() {
     }   
    
 
-  bodyElement.appendChild(newElement).style.lineHeight=".5em";
+  bodyElement.appendChild(newElement).style.lineHeight="1em";
   //document.querySelector("p").style.display="block";
   document.querySelector("p").style.color = "blue";
-  document.querySelector("p").style.textAlign ="right";
-  document.querySelector("p").style.marginRight = "1300px";
+  document.querySelector("p").style.textAlign ="left";
+  //document.querySelector("p").style.marginRight = "1300px";
   
 }
           
