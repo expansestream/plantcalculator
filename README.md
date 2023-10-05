@@ -11,6 +11,7 @@ Calculates plant totals in table form.
 <style>
     html {
         font-size: 1em;
+       margin-left: 2em;
       }
     body {font-family: serif;
                 font-size: 10pt;
