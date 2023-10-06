@@ -147,34 +147,34 @@ function counter() {
   let bodyElement = document.querySelector ("p");
   //let bodyElement = document.querySelector("p").style.display="none";
   if (count == 1) {
-  newElement.textContent = (count++ + "stEntryEntered");
+  newElement.textContent = (count++ + "st");
   } else {
     if (count == 2) {
-        newElement.textContent = (count++ + "nd Entry Entered");
+        newElement.textContent = (count++ + "nd");
     } else {
         if (count == 3) {
-            newElement.textContent = (count++ + "rd Entry Entered");
+            newElement.textContent = (count++ + "rd");
             } else {
               if (count == 11) {
-                newElement.textContent = (count++ + "th Entry Entered");
+                newElement.textContent = (count++ + "th");
               } else {
                 if (count == 12) {
-                    newElement.textContent = (count++ + "th Entry Entered");
+                    newElement.textContent = (count++ + "th");
                 } else {
                     if (count == 13) {
-                        newElement.textContent = (count++ + "th Entry Entered");
+                        newElement.textContent = (count++ + "th");
                     } else {
                           var digits = count.toString().split("");
                             if ((digits[(digits.length-1)] == 1)) {
-                            newElement.textContent = (count++ + "st Entry Entered");
+                            newElement.textContent = (count++ + "st");
                             } else {
                                 if ((digits[(digits.length-1)] == 2)) {
-                                newElement.textContent = (count++ + "nd Entry Entered");
+                                newElement.textContent = (count++ + "nd");
                                 } else {
                                     if ((digits[(digits.length-1)] == 3)) {
-                                    newElement.textContent = (count++ + "rd Entry Entered");
+                                    newElement.textContent = (count++ + "rd");
                                     } else {
-                                        newElement.textContent = (count++ + "th Entry Entered");
+                                        newElement.textContent = (count++ + "th");
                                     }
                       
                                 }
