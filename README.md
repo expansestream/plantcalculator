@@ -188,7 +188,7 @@ function counter() {
    
 
   bodyElement.appendChild(newElement).style.lineHeight="1em";
-  //document.querySelector("p").style.display="block";
+  document.querySelector("p").style.display="block";
   document.querySelector("p").style.color = "blue";
   document.querySelector("p").style.textAlign ="left";
   //document.querySelector("p").style.marginRight = "1300px";
