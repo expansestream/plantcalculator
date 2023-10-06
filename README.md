@@ -139,7 +139,7 @@ var arrNumbers= new Array();
 var arrPrices= new Array();
 
 
-var count = 1;
+/*var count = 1;
 
 function counter() {
 
@@ -193,7 +193,7 @@ function counter() {
   document.querySelector("p").style.textAlign ="left";
   //document.querySelector("p").style.marginRight = "1300px";
   
-}
+}*/
           
 function data() {
   
