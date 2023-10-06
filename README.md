@@ -147,7 +147,7 @@ function counter() {
   let bodyElement = document.querySelector ("p");
   //let bodyElement = document.querySelector("p").style.display="none";
   if (count == 1) {
-  newElement.textContent = (count++ + "st_Entry_Entered");
+  newElement.textContent = (count++ + "stEntryEntered");
   } else {
     if (count == 2) {
         newElement.textContent = (count++ + "nd Entry Entered");
