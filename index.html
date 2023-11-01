@@ -1,23 +1,19 @@
-<html lang="en" dir="ltr">
-   
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>
         Generate Table With Multiple Inputs 
     </title>
 </head>
 <style>
-    html {
-        font-size: 1em;
-        margin-left: 2em;
-      }
     body {font-family: serif;
                 font-size: 10pt;
             text-align: left;
             background-color: lemonchiffon;
-          }
-      td {font-family: Arial, Helvetica, sans-serif;
+    }
+  td {font-family: Arial, Helvetica, sans-serif;
                 font-size: 10pt;
                 width: 1in;
                 height: .085in;
@@ -39,7 +35,7 @@
         height: 10px;
         color: lightcoral;
         background-color: green;
-        margin-left: 110px;
+        margin-left: 130px;
     }
     a:hover {
         background-color: blue;
@@ -51,7 +47,7 @@
                 height: 150px;
                 border-style: ridge;
                 border-width: .5em;
-                margin-left: 105px;
+                margin: 20px auto;
                 text-align: center;
     }
     #demo2 {
@@ -61,23 +57,47 @@
                 border-style: ridge;
                 border-width: .5em;
                 text-align: center;
+                margin: 20px auto;
     }
     #head {
       font-size: 10pt;
-      color : blue;
-      background: lightgray;
+      color : lightcoral;
+      background: green;
     }
     #head:hover {
-      background-color: aqua;
+      background-color: blue;
       cursor: pointer;
     }
-    
+    #entries, #name, #number, #price, #head:focus {
+    color: red;
+    }
+    a:focus {
+        color: red;
+    }
+    #entries, #name, #number, #price, #head:hover {
+    color: red;
+    }
+    a:hover {
+        color: red;
+    }
+    #entries, #name, #number, #price {cursor: pointer;
+    }
+    p {text-align: center;
+      font-family: Arial, Helvetica, sans-serif;}
 
+    #head:active {
+      color: seashell;
+      background-color: limegreen;
+    }
+
+    a:active {
+      color: seashell;
+      background-color: limegreen;
+    }
+    
 </style>
 
 <body>
-
-    <div class="wrapper">
 
 <form>
 
@@ -137,43 +157,41 @@ var arrNames= new Array();
 var arrNumbers= new Array();
 var arrPrices= new Array();
 
-
 var count = 1;
 
 function counter() {
-
+    
   let newElement = document.createElement ("p");
   let bodyElement = document.querySelector ("p");
-  //let bodyElement = document.querySelector("p").style.display="none";
   if (count == 1) {
-  newElement.textContent = (count++ + "st"+" "+"Entry"+" "+"Entered");
+  newElement.textContent = (count++ + "st Entry Entered");
   } else {
     if (count == 2) {
-        newElement.textContent = (count++ + "nd"+" "+"Entry"+" "+"Entered");
+        newElement.textContent = (count++ + "nd Entry Entered");
     } else {
         if (count == 3) {
-            newElement.textContent = (count++ + "rd"+" "+"Entry"+" "+"Entered");
+            newElement.textContent = (count++ + "rd Entry Entered");
             } else {
               if (count == 11) {
-                newElement.textContent = (count++ + "th"+" "+"Entry"+" "+"Entered");
+                newElement.textContent = (count++ + "th Entry Entered");
               } else {
                 if (count == 12) {
-                    newElement.textContent = (count++ + "th"+" "+"Entry"+" "+"Entered");
+                    newElement.textContent = (count++ + "th Entry Entered");
                 } else {
                     if (count == 13) {
-                        newElement.textContent = (count++ + "th"+" "+"Entry"+" "+"Entered");
+                        newElement.textContent = (count++ + "th Entry Entered");
                     } else {
                           var digits = count.toString().split("");
                             if ((digits[(digits.length-1)] == 1)) {
-                            newElement.textContent = (count++ + "st"+" "+"Entry"+" "+"Entered");
+                            newElement.textContent = (count++ + "st Entry Entered");
                             } else {
                                 if ((digits[(digits.length-1)] == 2)) {
-                                newElement.textContent = (count++ + "nd"+" "+"Entry"+" "+"Entered");
+                                newElement.textContent = (count++ + "nd Entry Entered");
                                 } else {
                                     if ((digits[(digits.length-1)] == 3)) {
-                                    newElement.textContent = (count++ + "rd"+" "+"Entry"+" "+"Entered");
+                                    newElement.textContent = (count++ + "rd Entry Entered");
                                     } else {
-                                        newElement.textContent = (count++ + "th"+" "+"Entry"+" "+"Entered");
+                                        newElement.textContent = (count++ + "th Entry Entered");
                                     }
                       
                                 }
@@ -184,14 +202,9 @@ function counter() {
             }
         }
     }   
-   
-
+                    
   bodyElement.appendChild(newElement).style.lineHeight="1em";
-  document.querySelector("p").style.display="block";
   document.querySelector("p").style.color = "blue";
-  document.querySelector("p").style.textAlign ="left";
-  //document.querySelector("p").style.marginRight = "auto";
-  
 }
           
 function data() {
@@ -285,6 +298,6 @@ function data() {
     }
 
 </script>
-
+ 
 </body>
 </html>
